@@ -142,7 +142,7 @@
         quarter (mid-pt lowest mid)
         three-quarters (mid-pt mid highest)
         quarters (list (range lowest quarter) (range quarter mid) (range mid three-quarters) (range three-quarters highest))]
-    (first (remove nil? (pmap #(missing-seat % seats) halves)))))
+    (first (remove nil? (pmap #(missing-seat % seats) quarters)))))
 
 (defn solution-1
   [path]
